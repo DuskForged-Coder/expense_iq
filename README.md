@@ -45,26 +45,25 @@ receipts using ML Kit OCR, and generate useful financial reports.
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
-
 ## 🛠️ Tech Stack
 
-```{=html}
-<p>
-```
-`<a href="https://flutter.dev">`{=html}`<img src="https://img.shields.io/badge/Flutter-Dart-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter and Dart">`{=html}`</a>`{=html}
-`<a href="https://developers.google.com/ml-kit">`{=html}`<img src="https://img.shields.io/badge/Google-ML%20Kit-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google ML Kit">`{=html}`</a>`{=html}
-`<a href="https://developer.android.com">`{=html}`<img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">`{=html}`</a>`{=html}
-`<a href="https://m3.material.io/">`{=html}`<img src="https://img.shields.io/badge/Design-Material%203-6750A4?style=for-the-badge" alt="Material Design 3">`{=html}`</a>`{=html}
-```{=html}
-</p>
-```
-**Libraries and tools mentioned in this project:** - Flutter and Dart -
-Google ML Kit Text Recognition - `fl_chart` for charts and
-visualizations - PDF, Excel, and CSV export packages - Local storage and
-encryption packages
+### Core Technologies
 
-> Add Firebase badges and services here only if the current version of
-> the app actually uses Firebase.
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/>
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
+</p>
+
+### Libraries & Tools
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Google_ML_Kit-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google ML Kit"/>
+  <img src="https://img.shields.io/badge/fl__chart-00BFFF?style=for-the-badge" alt="fl_chart"/>
+  <img src="https://img.shields.io/badge/Material_Design_3-6750A4?style=for-the-badge" alt="Material Design 3"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</p>
 
 ------------------------------------------------------------------------
 
