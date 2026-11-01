@@ -1,101 +1,234 @@
 # ExpenseIQ 📊
 
-A premium offline-first personal finance Android app built with **Flutter** to track expenses, manage budgets, set savings goals, and capture receipts using ML Kit OCR.
+### Smart Personal Finance Management --- Flutter & Dart
 
----
+**ExpenseIQ** is a modern, offline-first personal finance Android
+application built with **Flutter**. It is designed to help users track
+income and expenses, manage budgets, monitor savings goals, scan
+receipts using ML Kit OCR, and generate useful financial reports.
+
+> **Project note:** This README describes the intended features and
+> setup based on the project information provided. Verify the
+> implementation, Firebase requirements, screenshots, and license in the
+> repository before publishing.
+
+------------------------------------------------------------------------
 
 ## 🌟 Features
 
-- **Expense Tracking**: Log income and expenses with categories and tags
-- **Budgets**: Set monthly/weekly budgets and get notified when approaching limits
-- **Savings Goals**: Create and track progress toward financial goals
-- **Receipt OCR**: Scan receipts with Google ML Kit to automatically extract totals and merchant info
-- **Smart Reports**: Generate beautiful PDF, Excel, and CSV summaries with fl_chart visualizations
-- **Offline-First**: All data stored locally with encrypted security
-- **Cross-Platform Material Design 3**: Beautiful UI on Android
+  -----------------------------------------------------------------------
+  Feature                             Description
+  ----------------------------------- -----------------------------------
+  💸 Expense Tracking                 Record income and expenses with
+                                      categories and tags.
 
----
+  📊 Budget Management                Create weekly or monthly budgets
+                                      and monitor spending.
+
+  🎯 Savings Goals                    Set financial targets and track
+                                      progress over time.
+
+  📸 Receipt OCR                      Use Google ML Kit to extract
+                                      receipt text, totals, and merchant
+                                      details.
+
+  📈 Smart Reports                    Generate PDF, Excel, and CSV
+                                      summaries, with visualizations
+                                      using `fl_chart`.
+
+  🔒 Offline-First Storage            Keep financial data available
+                                      locally, with encrypted storage
+                                      where implemented.
+
+  🎨 Material Design 3                A modern Android interface built
+                                      with Flutter.
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack
 
-[![Flutter](https://img.shields.io/badge/Flutter-Dart-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Android-848484?style=for-the-badge&logo=android)](https://developer.android.com)
+```{=html}
+<p>
+```
+`<a href="https://flutter.dev">`{=html}`<img src="https://img.shields.io/badge/Flutter-Dart-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter and Dart">`{=html}`</a>`{=html}
+`<a href="https://developers.google.com/ml-kit">`{=html}`<img src="https://img.shields.io/badge/Google-ML%20Kit-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google ML Kit">`{=html}`</a>`{=html}
+`<a href="https://developer.android.com">`{=html}`<img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">`{=html}`</a>`{=html}
+`<a href="https://m3.material.io/">`{=html}`<img src="https://img.shields.io/badge/Design-Material%203-6750A4?style=for-the-badge" alt="Material Design 3">`{=html}`</a>`{=html}
+```{=html}
+</p>
+```
+**Libraries and tools mentioned in this project:** - Flutter and Dart -
+Google ML Kit Text Recognition - `fl_chart` for charts and
+visualizations - PDF, Excel, and CSV export packages - Local storage and
+encryption packages
 
----
+> Add Firebase badges and services here only if the current version of
+> the app actually uses Firebase.
 
-## 📱 Screenshots
-
-| | |
-|---|---|
-| <img src="https://via.placeholder.com/300x500.png?text=Expense+Tracking" width="200"/> | <img src="https://via.placeholder.com/300x500.png?text=Budget+Management" width="200"/> |
-| <img src="https://via.placeholder.com/300x500.png?text=Receipt+OCR" width="200"/> | <img src="https://via.placeholder.com/300x500.png?text=Reports" width="200"/> |
-
----
+------------------------------------------------------------------------
 
 ## 🚀 Getting Started
 
-Follow these steps to get the app running locally:
+### Prerequisites
 
-```sh
+Make sure you have the following installed:
+
+-   [Flutter SDK](https://docs.flutter.dev/get-started/install)
+-   [Dart SDK](https://dart.dev/get-dart) (included with Flutter)
+-   [Android Studio](https://developer.android.com/studio) or another
+    supported editor
+-   Android SDK and an emulator or physical Android device
+-   Git
+
+Check your Flutter installation:
+
+``` bash
+flutter doctor
+```
+
+### Installation
+
+``` bash
 # 1. Clone the repository
 git clone https://github.com/your-username/expense_iq.git
+
+# 2. Open the project directory
 cd expense_iq
 
-# 2. Install dependencies
+# 3. Install dependencies
 flutter pub get
 
-# 3. Configure Firebase
-# - Create a Firebase project
-# - Enable Email/Password and Google authentication
-# - Enable Cloud Firestore, Firebase Storage, and Cloud Messaging
-# - Run: flutterfire configure
+# 4. Check the project
+flutter analyze
 
-# 4. Run the app
+# 5. Run the application
 flutter run
 ```
 
----
+### Firebase Configuration (If Required)
+
+If the current project version uses Firebase Authentication, Cloud
+Firestore, Firebase Storage, or Firebase Cloud Messaging, configure your
+own Firebase project:
+
+1.  Create a project in the [Firebase
+    Console](https://console.firebase.google.com/).
+2.  Register your Android application using its actual application ID.
+3.  Enable only the Firebase products used by the application.
+4.  Install and run the FlutterFire CLI if required.
+5.  Configure the project:
+
+``` bash
+dart pub global activate flutterfire_cli
+flutterfire configure
+```
+
+Do not upload private service credentials, signing keys, or sensitive
+configuration files to a public repository.
+
+------------------------------------------------------------------------
 
 ## 📊 Smart Reports
 
-ExpenseIQ generates **smart, beautiful reports** with:
+ExpenseIQ is designed to provide a clearer view of personal finances
+through:
 
-- **PDF reports**: Well-formatted financial summaries
-- **Excel export**: Data that can be opened in Excel/Google Sheets
-- **CSV export**: Compatible with any data analysis tool
-- **Charts & Graphs**: Visual spending trends using `fl_chart`
-- **Category breakdown**: See where your money goes
-- **Monthly/Yearly trends**: Track progress over time
+-   **PDF Reports:** Readable financial summaries.
+-   **Excel Export:** Spreadsheet-friendly financial data.
+-   **CSV Export:** Data suitable for external analysis tools.
+-   **Charts & Graphs:** Visual spending insights using `fl_chart`.
+-   **Category Breakdown:** Understand spending across categories.
+-   **Monthly & Yearly Trends:** Review financial activity over time.
 
----
+The availability of each export and reporting feature depends on the
+implementation in the current project version.
 
-## 📦 Available Scripts
+------------------------------------------------------------------------
 
-| Command | Description |
-|---|---|
-| `flutter pub get` | Install dependencies |
-| `flutter analyze` | Run static analysis |
-| `flutter test` | Run unit/integration tests |
-| `flutter build apk --release` | Build release APK |
-| `flutterfire configure` | Configure Firebase settings |
+## 📦 Useful Commands
 
----
+  Command                         Description
+  ------------------------------- ---------------------------------------
+  `flutter pub get`               Install project dependencies.
+  `flutter analyze`               Run static analysis.
+  `flutter test`                  Run automated tests.
+  `flutter run`                   Launch the app on a connected device.
+  `flutter build apk --release`   Build a release APK.
+  `flutterfire configure`         Configure Firebase, if used.
+
+------------------------------------------------------------------------
 
 ## 🤝 Contributing
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions, bug reports, and suggestions are welcome.
 
---- 
+1.  Fork this repository.
+2.  Create a feature branch: `git checkout -b feature/AmazingFeature`
+3.  Commit your changes: `git commit -m "Add some AmazingFeature"`
+4.  Push the branch: `git push origin feature/AmazingFeature`
+5.  Open a Pull Request describing your changes.
+
+Please keep contributions focused and include relevant testing details.
+
+------------------------------------------------------------------------
+
+## 🗺️ Roadmap
+
+Potential improvements for future versions:
+
+-   [ ] Improve financial dashboard and spending insights.
+-   [ ] Add more budget visualizations.
+-   [ ] Refine receipt scanning and extraction.
+-   [ ] Expand report customization.
+-   [ ] Improve accessibility and user experience.
+-   [ ] Add automated tests for core financial workflows.
+
+Update this roadmap as features are implemented.
+
+------------------------------------------------------------------------
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is described as using the **MIT License**. See the
+[`LICENSE`](LICENSE) file for the complete terms.
 
---- 
+If the repository does not yet contain a `LICENSE` file, add the correct
+license before claiming the project is MIT-licensed.
 
-**Made with ❤️ using Flutter and Dart**
+------------------------------------------------------------------------
+
+## ☕ Support ExpenseIQ
+
+If you find this project useful, consider supporting its continued development!
+
+<p align="center">
+  <a href="https://razorpay.me/@adityanarayanrautaray" target="_blank">
+    <img src="https://img.shields.io/badge/SUPPORT_DEVELOPMENT-Buy_Me_a_Coffee-00BFFF?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy Me a Coffee - Support Development" />
+  </a>
+</p>
+
+<p align="center">
+  <b>Every contribution helps support future improvements and development.</b>
+</p>
+
+<p align="center">
+  <a href="https://razorpay.me/@adityanarayanrautaray">
+    Support via Razorpay →
+  </a>
+</p>
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+**Aditya Narayan Rautaray**
+
+- GitHub: [@DuskForged-Coder](https://github.com/DuskForged-Coder)
+- LinkedIn: [Aditya Narayan Rautaray](https://www.linkedin.com/in/aditya-narayan-rautaray-92b05b272/)
+
+---
+
+**Made with ❤️ using Flutter and Dart.**
+
+*ExpenseIQ — Understand your money. Make informed decisions.*
